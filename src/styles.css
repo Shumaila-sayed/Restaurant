@@ -27,15 +27,26 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   isolation: isolate;
+  --rich-black-fogra-29: hsl(210, 26%, 7%);
   --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+  --independence_30: hsla(245, 17%, 29%, 0.3);
+  --gray-x-11-gray: hsl(0, 0%, 73%);
   --champagne-pink: hsl(23, 61%, 86%);
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
   --deep-saffron: hsl(32, 100%, 59%);
---dark-orange: hsl(28, 100%, 58%);
---gray-x-11-gray: hsl(0, 0%, 73%);
---rich-black-fogra-29: hsl(210, 26%, 7%);
---white: hsl(0, 0%, 100%);
---black: hsl(0, 0%, 0%);
-}
+  --dark-orange: hsl(28, 100%, 58%);
+  --desert-sand: hsl(23, 49%, 82%);
+  --isabelline: hsl(38, 44%, 96%);
+  --gainsboro: hsl(0, 0%, 87%);
+  --tangerine: hsl(31, 84%, 50%);
+  --cinnabar: hsl(3, 90%, 55%);
+  --black_95: hsla(0, 0%, 0%, 0.95);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --onyx: hsl(0, 0%, 27%);
+  }
 
 
 
@@ -131,4 +142,143 @@ nav button:hover {
 .hero-btn:hover {
   background-color: var(--white);
   color: var(--black);
+}
+
+.shop {
+  padding: 2.6em 5.2em;
+  background-color: var(--white);
+}
+
+.shop-details {
+  text-align: center;  
+}
+
+.shop-para {
+  color: var(--cinnabar);
+  font-weight: 600;
+}
+
+.shop-heading {
+  font-size: 2.6em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.shop-heading::after {
+  content: "Foods";
+  color: var(--tangerine);
+}
+
+.shop-sub-para {
+  padding-top: 1em;
+  color: var(--spanish-gray);
+}
+
+.tabs {
+  padding-top: 1.4em;
+  display: flex;
+  justify-content: center;
+  gap: 1.6em;
+}
+
+.tabs button {
+  background-color: var(--champagne-pink_20);
+  cursor: pointer;
+  color: var(--black);
+  padding: 0.5em 1.4em;
+  border: none;
+  font-weight: 700;
+}
+
+.tabs :first-child {
+  background-color: var(--deep-saffron);
+  color: var(--white);
+}
+
+.menu {
+  padding-top: 2em;
+}
+
+.card {
+  padding: 2.5em 2em;
+  border-radius: 0.8em;
+  background-color: var(--champagne-pink_20);
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+span.fried-chicken-img::before {
+  content: url(./Foodie/assets/images/food-menu-1.png);
+}
+
+.dish-name {
+  padding-top: 0.8em;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: -0.02em;
+}
+
+.price {
+  padding-top: 0.5em;
+  color: var(--cinnabar);
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.fried-chicken::after {
+  content: '   $49.00';
+  color: var(--deep-saffron);
+}
+
+span.burger-king-img::before {
+  content: url(./Foodie/assets/images/food-menu-2.png);
+}
+
+.burger-king::after {
+  content: '   $29.00';
+  color: var(--deep-saffron);
+}
+
+span.pizza-img::before {
+  content: url(./Foodie/assets/images/food-menu-3.png);
+}
+
+.pizza::after {
+  content: '   $49.00';
+  color: var(--deep-saffron);
+}
+
+span.burrito-img::before {
+  content: url(./Foodie/assets/images/food-menu-4.png);
+}
+
+.burrito::after {
+  content: '   $59.00';
+  color: var(--deep-saffron);
+}
+
+span.bbq-img::before {
+  content: url(./Foodie/assets/images/food-menu-5.png);
+}
+
+.bbq::after {
+  content: '   $49.00';
+  color: var(--deep-saffron);
+}
+
+span.wendy-img::before {
+  content: url(./Foodie/assets/images/food-menu-6.png);
+}
+
+.wendy::after {
+  content: '   $49.00';
+  color: var(--deep-saffron);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.2em;
+  
 }
