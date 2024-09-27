@@ -1,3 +1,133 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 body {
-    background-color: rebeccapurple;
-  }
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Rubik', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  isolation: isolate;
+  --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+  --champagne-pink: hsl(23, 61%, 86%);
+  --deep-saffron: hsl(32, 100%, 59%);
+--dark-orange: hsl(28, 100%, 58%);
+--gray-x-11-gray: hsl(0, 0%, 73%);
+--rich-black-fogra-29: hsl(210, 26%, 7%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 6.8em;
+  background-color: var(--champagne-pink_20);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  cursor: pointer;
+}
+
+.logo::after {
+  content: ".";
+  color: var(--dark-orange);
+}
+
+nav {
+  display: flex;
+  gap: 2em;
+}
+
+nav button {
+  border: none;
+  background-color: inherit;
+  font-weight: 700;
+  color: var(--rich-black-fogra-29);
+}
+
+nav button:hover {
+  color: var(--dark-orange);
+  cursor: pointer;
+}
+
+#nav-reserv {
+  background-color: var(--dark-orange);
+  color: var(--white);
+  padding: 0.6em 2em;
+}
+
+#nav-reserv:hover {
+  background-color: var(--black);
+}
+
+.hero {
+  background-image: url(./Foodie/assets/images/hero-banner-full.png);
+  padding: 10em 5.4em;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+
+}
+
+.hero-para {
+  font-family: cursive;
+  color: var(--dark-orange);
+  font-size: 1.8em;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+h1 {
+  padding-top: 0.4em;
+  color: var(--champagne-pink);
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+.hero-sub-para {
+  padding-top: 1.6em;
+  color: var(--champagne-pink);
+  letter-spacing: 0.04em;
+}
+
+.hero-btn {
+  margin-top: 1.8em;
+  color: var(--white);
+  background-color: var(--deep-saffron);
+  border: none;
+  padding: 0.6em 2.4em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
