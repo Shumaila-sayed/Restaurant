@@ -103,7 +103,7 @@ nav button:hover {
   font-style: italic;
 }
 
-h1 {
+.hero-heading {
   padding-top: 0.4em;
   color: var(--champagne-pink);
   letter-spacing: -0.04em;
@@ -111,6 +111,7 @@ h1 {
   font-size: 4em;
   line-height: 1.2em;
 }
+
 .hero-sub-para {
   padding-top: 1.6em;
   color: var(--champagne-pink);
