@@ -1,12 +1,8 @@
 import "./styles.css";
-// import { loadHome } from "./home.js";
-// import { loadShop } from "./shop.js";
-// import { loadAbout } from "./about";
-
-console.log(1);
-
-
-
+import { loadHome } from "./home.js";
+import { loadShop } from "./shop.js";
+import { loadAbout } from "./about";
+import { loadBlog } from "./blog";
 
 document.addEventListener('DOMContentLoaded', () => {
     let container = document.querySelector('#content');
@@ -14,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const homeBtn = document.querySelector('#home')
     const shopBtn = document.querySelector('#shop');
     const aboutBtn = document.querySelector('#about');
+    const blogBtn = document.querySelector('#blog');
 
     homeBtn.addEventListener('click', () => {
         container.innerHTML = "";
@@ -30,7 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         loadAbout();
     } )
 
-    // loadHome()
+    blogBtn.addEventListener('click', () => {
+        container.innerHTML = "";
+        loadBlog();
+    } )
+    
+     loadHome()
 })
-
-
