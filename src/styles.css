@@ -12,12 +12,12 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-img, picture, video, canvas, svg {
+img, svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+button{
   font: inherit;
 }
 
@@ -47,8 +47,6 @@ p, h1, h2, h3, h4, h5, h6 {
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
   }
-
-
 
 header {
   display: flex;
@@ -105,7 +103,6 @@ nav button:hover {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-
 }
 
 .hero-para {
@@ -284,16 +281,14 @@ span.wendy-img::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.2em;
-  
 }
 
 /* about section styles */
 
-
 .aboutPage {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2em 6.8em;
+  padding: 2.8em 6.8em 1em 6.8em;
   gap: 2em;
 }
 
@@ -318,13 +313,11 @@ span.about-banner::after {
   background-repeat: no-repeat;
 }
 
-
 .about-heading {
-   font-size: 2.6em;
-   font-weight: bolder;
-   line-height: 1.18em;
-   letter-spacing: -0.04em;
-
+  font-size: 2.6em;
+  font-weight: bolder;
+  line-height: 1.18em;
+  letter-spacing: -0.04em;
 }
 
 .about-heading::after {
@@ -345,6 +338,22 @@ span.about-banner::after {
   color: var(--black_95);
 }
 
+.list::before {
+  content: "";
+  display: inline-block;
+  background-image: url(./Foodie/assets/check_circle_28dp_FF9D2E_FILL1_wght400_GRAD0_opsz24.png);
+  background-size: 1.6em;
+  width: 1.6em;
+  height: 1.6em;
+  position: absolute;
+  left: -2.4em;
+  top: 0.2em;
+}
+
+.list {
+  position: relative;
+}
+
 .about-btn {
   margin-top: 2em;
   background-color: var(--deep-saffron);
@@ -352,4 +361,9 @@ span.about-banner::after {
   border: none;
   padding: 0.6em 2.2em;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.about-btn:hover {
+  background-color: var(--black);
 }
