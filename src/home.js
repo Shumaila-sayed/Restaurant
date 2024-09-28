@@ -1,5 +1,4 @@
 function loadHome() {
-document.addEventListener("DOMContentLoaded", () => {
    const container = document.querySelector('#content');
 
    const home = document.createElement('div');
@@ -28,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
    btn.classList.add('hero-btn');
 
    home.appendChild(btn);
-
    container.appendChild(home);
-} )
+
+   return container.innerHTML;
 }
 
 export { loadHome }

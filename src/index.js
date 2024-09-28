@@ -2,18 +2,28 @@ import "./styles.css";
 import { loadHome } from "./home.js";
 import { loadShop } from "./shop.js";
 
-
-loadHome();
 console.log(1);
 
 
 
 
-const shopBtn = document.querySelector('#shop');
+document.addEventListener('DOMContentLoaded', () => {
+    let container = document.querySelector('#content');
+    
+    const homeBtn = document.querySelector('#home')
+    const shopBtn = document.querySelector('#shop');
 
-let container = document.querySelector('#content');
+    homeBtn.addEventListener('click', () => {
+        container.innerHTML = "";
+        loadHome();
+    })
 
-shopBtn.addEventListener('click', () => {
-    container.innerHTML = " ";
-    container = loadShop();
+    shopBtn.addEventListener('click', () => {
+        container.innerHTML = "";
+        loadShop();
+    })
+
+    loadHome()
 })
+
+

@@ -1,4 +1,5 @@
 function loadShop() {
+
     const container = document.querySelector('#content');
 
     const shop = document.createElement('div');
@@ -117,6 +118,8 @@ function loadShop() {
 
     shop.appendChild(menu);
     container.appendChild(shop);
+
+    return container.innerHTML;
 };
 
 export { loadShop }

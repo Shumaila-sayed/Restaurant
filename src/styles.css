@@ -97,6 +97,8 @@ nav button:hover {
   background-color: var(--black);
 }
 
+ /* home styles */
+
 .hero {
   background-image: url(./Foodie/assets/images/hero-banner-full.png);
   padding: 10em 5.4em;
@@ -143,6 +145,8 @@ nav button:hover {
   background-color: var(--white);
   color: var(--black);
 }
+
+/* shop styles */
 
 .shop {
   padding: 2.6em 5.2em;
@@ -282,3 +286,5 @@ span.wendy-img::before {
   gap: 1.2em;
   
 }
+
+/* about section styles */
