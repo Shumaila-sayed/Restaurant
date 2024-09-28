@@ -367,3 +367,146 @@ span.about-banner::after {
 .about-btn:hover {
   background-color: var(--black);
 }
+
+/* Blog section */
+
+.blogSection {
+  padding: 4em 5.4em;
+}
+
+.blog-details {
+  text-align: center;
+}
+
+.blog-para {
+  color: var(--cinnabar);
+  font-weight: bold;
+}
+
+.blog-heading {
+  padding-top: 0.2em; 
+  font-size: 2.5em;
+}
+
+.blog-heading::after {
+  content: " Foods";
+  color: var(--deep-saffron);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.blog-sub-para {
+  color: var(--spanish-gray);
+  padding-top: 0.5em; 
+}
+
+.blogs {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.2em;
+}
+
+.blog-card {
+  background-color: var(--champagne-pink_20);
+  width: 22em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+span.blog-pizza::before {
+  content: "";
+  display: inline-block;
+  background-image: url(./Foodie/assets/images/blog-1.jpg);
+  background-size: 22em;
+  width: 22em;
+  height: 16em;
+  background-repeat: no-repeat;
+}
+
+span.blog-burger::before {
+  content: "";
+  display: inline-block;
+  background-image: url(./Foodie/assets/images/blog-2.jpg);
+  background-size: 22em;
+  width: 22em;
+  height: 16em;
+  background-repeat: no-repeat;
+}
+
+span.blog-chicken::before {
+  content: "";
+  display: inline-block;
+  background-image: url(./Foodie/assets/images/blog-3.jpg);
+  background-size: 22em;
+  width: 22em;
+  height: 16em;
+  background-repeat: no-repeat;
+}
+
+span.blog-pizza, span.blog-chicken, span.blog-burger{
+  position: relative;
+}
+
+span.blog-pizza::after{
+  content: "PIZZA";
+  position: absolute;
+  right: 0.6em;
+  top: -14em;
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.1em 0.9em;
+}
+
+span.blog-burger::after {
+  content: "BURGER";
+  position: absolute;
+  right: 0.6em;
+  top: -14em;
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.1em 0.9em;
+}
+
+span.blog-chicken::after {
+  content: "CHICKEN";
+  position: absolute;
+  right: 0.6em;
+  top: -14em;
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.1em 0.9em;
+}
+
+.blog-title {
+  margin-top: -1em;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.blog-title:hover {
+  text-decoration: underline;
+  color: var(--spanish-gray);
+}
+
+.blog-description {
+  padding: 0.1em 1.2em;
+  color: var(--gray-x-11-gray);
+}
+
+.read {
+  padding: 2em 1.5em;
+  font-size: 0.7em;
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.read:hover {
+  color: var(--dark-orange);
+}

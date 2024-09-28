@@ -1,7 +1,7 @@
 import "./styles.css";
-import { loadHome } from "./home.js";
-import { loadShop } from "./shop.js";
-import { loadAbout } from "./about";
+// import { loadHome } from "./home.js";
+// import { loadShop } from "./shop.js";
+// import { loadAbout } from "./about";
 
 console.log(1);
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadAbout();
     } )
 
-    loadHome()
+    // loadHome()
 })
 
 
