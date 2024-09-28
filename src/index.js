@@ -1,6 +1,6 @@
 import "./styles.css";
-import { loadHome } from "./home.js";
-import { loadShop } from "./shop.js";
+// import { loadHome } from "./home.js";
+// import { loadShop } from "./shop.js";
 
 console.log(1);
 

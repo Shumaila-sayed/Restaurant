@@ -288,3 +288,68 @@ span.wendy-img::before {
 }
 
 /* about section styles */
+
+
+.aboutPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 6.8em;
+  gap: 2em;
+}
+
+.about-banner {
+  position: relative;
+}
+
+span.about-banner::before {
+  content: url(./Foodie/assets/images/about-banner.png);
+}
+
+span.about-banner::after {
+  content: '';
+  position: absolute;
+  background-image: url(./Foodie/assets/images/sale-shape-red.png);
+  left: 6em;
+  top: -1em;
+  background-size: 14em;
+  display: inline-block;
+  width: 14em; 
+  height: 14em;
+  background-repeat: no-repeat;
+}
+
+
+.about-heading {
+   font-size: 2.6em;
+   font-weight: bolder;
+   line-height: 1.18em;
+   letter-spacing: -0.04em;
+
+}
+
+.about-heading::after {
+  content: ' in Town!';
+  color: var(--deep-saffron);
+}
+
+.about-para {
+  color: var(--spanish-gray);
+  padding-top: 1em;
+}
+
+.about-lists {
+  padding-top: 1em;
+  line-height: 2.2em;
+  font-weight: 700;
+  list-style: none;
+  color: var(--black_95);
+}
+
+.about-btn {
+  margin-top: 2em;
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  border: none;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+}
