@@ -1,36 +1,36 @@
-import "./styles.css";
-import { loadHome } from "./home.js";
-import { loadShop } from "./shop.js";
-import { loadAbout } from "./about";
-import { loadBlog } from "./blog";
+import './styles.css';
+import { loadHome } from './home.js';
+import { loadShop } from './shop.js';
+import { loadAbout } from './about';
+import { loadBlog } from './blog';
 
 document.addEventListener('DOMContentLoaded', () => {
-    let container = document.querySelector('#content');
-    
-    const homeBtn = document.querySelector('#home')
-    const shopBtn = document.querySelector('#shop');
-    const aboutBtn = document.querySelector('#about');
-    const blogBtn = document.querySelector('#blog');
+	let container = document.querySelector('#content');
 
-    homeBtn.addEventListener('click', () => {
-        container.innerHTML = "";
-        loadHome();
-    })
+	const homeBtn = document.querySelector('#home');
+	const shopBtn = document.querySelector('#shop');
+	const aboutBtn = document.querySelector('#about');
+	const blogBtn = document.querySelector('#blog');
 
-    shopBtn.addEventListener('click', () => {
-        container.innerHTML = "";
-        loadShop();
-    })
+	homeBtn.addEventListener('click', () => {
+		container.innerHTML = '';
+		loadHome();
+	});
 
-    aboutBtn.addEventListener('click', () => {
-        container.innerHTML = "";
-        loadAbout();
-    } )
+	shopBtn.addEventListener('click', () => {
+		container.innerHTML = '';
+		loadShop();
+	});
 
-    blogBtn.addEventListener('click', () => {
-        container.innerHTML = "";
-        loadBlog();
-    } )
-    
-     loadHome()
-})
+	aboutBtn.addEventListener('click', () => {
+		container.innerHTML = '';
+		loadAbout();
+	});
+
+	blogBtn.addEventListener('click', () => {
+		container.innerHTML = '';
+		loadBlog();
+	});
+
+	loadHome();
+});

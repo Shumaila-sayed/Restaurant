@@ -1,59 +1,60 @@
 function loadAbout() {
-    const container = document.querySelector('#content');
+	const container = document.querySelector('#content');
 
-    const aboutSection = document.createElement('div');
-    aboutSection.classList.add("aboutPage");
+	const aboutSection = document.createElement('div');
+	aboutSection.classList.add('aboutPage');
 
-    const image = document.createElement('span');
-    image.classList.add("about-banner");
-  
-    aboutSection.appendChild(image);
+	const image = document.createElement('span');
+	image.classList.add('about-banner');
 
-    const details = document.createElement('div');
+	aboutSection.appendChild(image);
 
-    const heading = document.createElement('h3');
-    heading.innerHTML =  'Foodie, Burgers, and <br>Best Pizzas'
-    heading.classList.add('about-heading');
+	const details = document.createElement('div');
 
-    details.appendChild(heading);
+	const heading = document.createElement('h3');
+	heading.innerHTML = 'Foodie, Burgers, and <br>Best Pizzas';
+	heading.classList.add('about-heading');
 
-    const para = document.createElement('p');
-    para.innerHTML = "The restaurants in Hangzhou also catered to many northern Chinese who had <br>fled south from Kaifeng during the Jurchen invasion of the 1120s, while it is <br>also known that many restaurants were run by families."
-    para.classList.add('about-para');
+	details.appendChild(heading);
 
-    details.appendChild(para);
+	const para = document.createElement('p');
+	para.innerHTML =
+		'The restaurants in Hangzhou also catered to many northern Chinese who had <br>fled south from Kaifeng during the Jurchen invasion of the 1120s, while it is <br>also known that many restaurants were run by families.';
+	para.classList.add('about-para');
 
-    const lists = document.createElement('ul');
-    lists.classList.add('about-lists');
+	details.appendChild(para);
 
-    for( let i = 0; i < 4; i++) {
-        let list = document.createElement('li');
-        list.classList.add('list')
-    
-        if(i == 0) {
-            list.textContent = "Delicious & Healthy Foods";
-        } else if (i == 1) {
-            list.textContent = "Spacific Family And Kids Zone";
-        } else if (i == 2) {
-            list.textContent = "Music & Other Facilities";
-        } else if (i == 3) {
-            list.textContent = "Fastest Food Home Delivery"
-        }
+	const lists = document.createElement('ul');
+	lists.classList.add('about-lists');
 
-        lists.appendChild(list);
-    }
-    details.appendChild(lists);
+	for (let i = 0; i < 4; i++) {
+		let list = document.createElement('li');
+		list.classList.add('list');
 
-    const btn = document.createElement('button');
-    btn.textContent = "Order Now"
-    btn.classList.add('about-btn');
+		if (i == 0) {
+			list.textContent = 'Delicious & Healthy Foods';
+		} else if (i == 1) {
+			list.textContent = 'Spacific Family And Kids Zone';
+		} else if (i == 2) {
+			list.textContent = 'Music & Other Facilities';
+		} else if (i == 3) {
+			list.textContent = 'Fastest Food Home Delivery';
+		}
 
-    details.appendChild(btn);
+		lists.appendChild(list);
+	}
+	details.appendChild(lists);
 
-    aboutSection.appendChild(details);
-    container.appendChild(aboutSection);
+	const btn = document.createElement('button');
+	btn.textContent = 'Order Now';
+	btn.classList.add('about-btn');
 
-    return container.innerHTML;
+	details.appendChild(btn);
+
+	aboutSection.appendChild(details);
+	container.appendChild(aboutSection);
+
+	return container.innerHTML;
 }
 
-export { loadAbout }
+export { loadAbout };

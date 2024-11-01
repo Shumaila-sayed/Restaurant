@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -9,19 +11,26 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
 
-button{
+button {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -46,7 +55,7 @@ p, h1, h2, h3, h4, h5, h6 {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
-  }
+}
 
 header {
   display: flex;
@@ -95,7 +104,7 @@ nav button:hover {
   background-color: var(--black);
 }
 
- /* home styles */
+/* home styles */
 
 .hero {
   background-image: url(./Foodie/assets/images/hero-banner-full.png);
@@ -151,7 +160,7 @@ nav button:hover {
 }
 
 .shop-details {
-  text-align: center;  
+  text-align: center;
 }
 
 .shop-para {
@@ -174,12 +183,12 @@ nav button:hover {
   padding-top: 1em;
   color: var(--spanish-gray);
 }
- 
+
 .tabs {
   padding-top: 1.4em;
   display: flex;
   justify-content: center;
-  gap: 1.6em; 
+  gap: 1.6em;
 }
 
 .tabs button {
@@ -205,7 +214,7 @@ nav button:hover {
   border-radius: 0.8em;
   background-color: var(--champagne-pink_20);
   width: fit-content;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 span.fried-chicken-img::before {
@@ -228,7 +237,7 @@ span.fried-chicken-img::before {
 }
 
 .fried-chicken::after {
-  content: '   $49.00';
+  content: "   $49.00";
   color: var(--deep-saffron);
 }
 
@@ -237,7 +246,7 @@ span.burger-king-img::before {
 }
 
 .burger-king::after {
-  content: '   $29.00';
+  content: "   $29.00";
   color: var(--deep-saffron);
 }
 
@@ -246,7 +255,7 @@ span.pizza-img::before {
 }
 
 .pizza::after {
-  content: '   $49.00';
+  content: "   $49.00";
   color: var(--deep-saffron);
 }
 
@@ -255,7 +264,7 @@ span.burrito-img::before {
 }
 
 .burrito::after {
-  content: '   $59.00';
+  content: "   $59.00";
   color: var(--deep-saffron);
 }
 
@@ -264,7 +273,7 @@ span.bbq-img::before {
 }
 
 .bbq::after {
-  content: '   $49.00';
+  content: "   $49.00";
   color: var(--deep-saffron);
 }
 
@@ -273,7 +282,7 @@ span.wendy-img::before {
 }
 
 .wendy::after {
-  content: '   $49.00';
+  content: "   $49.00";
   color: var(--deep-saffron);
 }
 
@@ -301,14 +310,14 @@ span.about-banner::before {
 }
 
 span.about-banner::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url(./Foodie/assets/images/sale-shape-red.png);
   left: 6em;
   top: -1em;
   background-size: 14em;
   display: inline-block;
-  width: 14em; 
+  width: 14em;
   height: 14em;
   background-repeat: no-repeat;
 }
@@ -321,7 +330,7 @@ span.about-banner::after {
 }
 
 .about-heading::after {
-  content: ' in Town!';
+  content: " in Town!";
   color: var(--deep-saffron);
 }
 
@@ -384,7 +393,7 @@ span.about-banner::after {
 }
 
 .blog-heading {
-  padding-top: 0.2em; 
+  padding-top: 0.2em;
   font-size: 2.5em;
 }
 
@@ -397,7 +406,7 @@ span.about-banner::after {
 
 .blog-sub-para {
   color: var(--spanish-gray);
-  padding-top: 0.5em; 
+  padding-top: 0.5em;
 }
 
 .blogs {
@@ -410,7 +419,7 @@ span.about-banner::after {
 .blog-card {
   background-color: var(--champagne-pink_20);
   width: 22em;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 span.blog-pizza::before {
@@ -443,11 +452,13 @@ span.blog-chicken::before {
   background-repeat: no-repeat;
 }
 
-span.blog-pizza, span.blog-chicken, span.blog-burger{
+span.blog-pizza,
+span.blog-chicken,
+span.blog-burger {
   position: relative;
 }
 
-span.blog-pizza::after{
+span.blog-pizza::after {
   content: "PIZZA";
   position: absolute;
   right: 0.6em;
