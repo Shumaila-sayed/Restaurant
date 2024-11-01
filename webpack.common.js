@@ -1,30 +1,29 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+/* eslint-disable no-undef */
+import { resolve } from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 
-module.exports = {
-    entry: "./src/index.js",
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Production',
-          template: "./src/template.html",
-          favicon: './src/Foodie/favicon.svg',
-        }),
-      ],    
-      output: {
-      filename: "main.js",
-      path: path.resolve(__dirname, "dist"),
-      clean: true,
+export const entry = "./src/index.js";
+export const plugins = [
+  new HtmlWebpackPlugin({
+    title: 'Production',
+    template: "./src/template.html",
+    favicon: './src/Foodie/favicon.svg',
+  }),
+];
+export const output = {
+  filename: "main.js",
+  path: resolve(__dirname, "dist"),
+  clean: true,
+};
+export const module = {
+  rules: [
+    {
+      test: /\.css$/i,
+      use: ["style-loader", "css-loader"],
     },
-      module: {
-        rules: [
-          {
-            test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
-          },
-          {
-            test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            type: "asset/resource",
-          },
-        ],
-      },
-  };
+    {
+      test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      type: "asset/resource",
+    },
+  ],
+};
